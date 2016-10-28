@@ -8,6 +8,8 @@ import com.hazelcast.config.*;
 
 import de.deelthor.ksbhc.controller.Lock;
 import de.deelthor.ksbhc.controller.LockSerializer;
+import de.deelthor.ksbhc.discovery.HazelcastKubernetesDiscoveryStrategyFactory;
+import de.deelthor.ksbhc.discovery.KubernetesProperties;
 
 @Configuration
 public class HazelcastKubernetesConfiguration {

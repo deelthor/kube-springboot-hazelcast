@@ -1,4 +1,4 @@
-package de.deelthor.ksbhc;
+package de.deelthor.ksbhc.discovery;
 
 import static com.hazelcast.config.properties.PropertyTypeConverter.STRING;
 

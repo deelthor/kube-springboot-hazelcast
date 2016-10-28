@@ -1,4 +1,4 @@
-package de.deelthor.ksbhc;
+package de.deelthor.ksbhc.discovery;
 
 import static ch.qos.logback.core.util.OptionHelper.getEnv;
 

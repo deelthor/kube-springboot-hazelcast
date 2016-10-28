@@ -1,4 +1,4 @@
-package de.deelthor.ksbhc;
+package de.deelthor.ksbhc.discovery;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
