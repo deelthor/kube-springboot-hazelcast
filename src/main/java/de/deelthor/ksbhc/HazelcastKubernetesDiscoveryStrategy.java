@@ -10,9 +10,9 @@ import com.hazelcast.config.properties.PropertyDefinition;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.spi.discovery.DiscoveryNode;
 import com.hazelcast.spi.discovery.DiscoveryStrategy;
+import com.hazelcast.spi.partitiongroup.PartitionGroupStrategy;
 
-public class HazelcastKubernetesDiscoveryStrategy
-        implements DiscoveryStrategy {
+public class HazelcastKubernetesDiscoveryStrategy implements DiscoveryStrategy {
 
     private static final String HAZELCAST_SERVICE_PORT = "hazelcast-service-port";
 
@@ -43,6 +43,16 @@ public class HazelcastKubernetesDiscoveryStrategy
 
     public void destroy() {
         endpointResolver.destroy();
+    }
+
+    @Override
+    public PartitionGroupStrategy getPartitionGroupStrategy() {
+        return null;
+    }
+
+    @Override
+    public Map<String, Object> discoverLocalMetadata() {
+        return null;
     }
 
     private <T extends Comparable> T getOrNull(Map<String, Comparable> properties, PropertyDefinition property) {

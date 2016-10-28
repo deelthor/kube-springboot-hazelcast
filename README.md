@@ -6,6 +6,6 @@ Demo project for use of Hazelcast within SpringBoot apps running in Kubernetes
 
 `eval $(minikube docker-env)`
 
-`mvn clean install docker:build`
+`mvn clean package docker:build`
 
 `kubectl create -f src/main/kubernetes/rc.yaml`
