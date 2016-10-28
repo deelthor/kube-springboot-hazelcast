@@ -8,7 +8,7 @@ spec:
     name: springboothc
   template:
     metadata:
-      name: nginx
+      name: springboothc
       labels:
         name: springboothc
     spec:
