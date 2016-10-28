@@ -12,4 +12,4 @@ Demo project for use of Hazelcast within SpringBoot apps running in Kubernetes
 
 `kubectl create -f src/main/kubernetes/service.yaml`
 
-`curl $(minikube ip):30001/hazelcast/health`
+`curl $(minikube ip):30001/health`
