@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: springboothc
-        image: deelthor/spring-boot-health-test:0.0.1-SNAPSHOT
+        image: deelthor/kube-springboot-hazelcast:0.0.1-SNAPSHOT
         ports:
         - containerPort: 8080
         env:
